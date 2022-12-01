@@ -1,16 +1,118 @@
 main{
     background-color: #333333;
     width: 80%;
-    min-width:1000px;
+    max-width:1000px;
     margin: auto;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    display: grid;
+    grid-template-areas: "h   h"
+                         "ar as"
+                         "f   f";
+   grid-template-columns: 2fr 1fr; 
+   box-shadow: 2px 2px 2px rgb(174,174,168);                     
+                         
+    
+    
 }
 header{
     height: 300px;
     font-family: Garamond;
     font-weight:bold;
     background-size:cover;
+    grid-area: h;
+    background-image: url("képek/beer-new_401732638.jpg");
+    line-height: 4px;
+    font-size: 32px;
+    padding-top: 30px;
+    padding-left: 30;
+    text-align: left;
+}
+*{
+    box-sizing: border-box;
+   
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 10pt;
+    background-image: url("képek/teglafal.jpg");
+
 }
 
+article{
+    grid-area: ar;
+    background-color: black;
+    text-align: justify;
+}
+article ul{
+    margin-left: 30%;
+    margin-right: 10%;
+}
+aside{
+    background-color: rgb(75, 75, 75);
+    grid-area: as;
+    width: 100%;
+}
+aside ul{
+    width: 100%;
+    padding-left: 10px;
+}
+aside nav ul li{
+    list-style-type:none;
+    padding: 4px;
+}
+nav ul li{
+    border: 1px solid lightslategray;
+    border-radius: 1px;
+}
+nav ul li :hover{
+background-color: white;
+}
+nav ul li a{
+text-decoration: none;
+color: red;
+margin-left: 10px;
+}
+img{
+width: 100%;
+}
+.kep{
+width: 100%;
+float: left;
+padding: 10px;
+}
+footer{
+    grid-area: f;
+    text-align: center;
+}
+table tr th{
+    border: 1px solid gray;
+}
+table tr td{
+    border:1px solid gray;
+}
+table tr:nth-child(even){
+    background-color: gray;
+}
+@media screen and (max-width:800px){
+    main{
+        grid-template-areas: " h"
+                              "as"
+                              "ar"
+                             " f";
+       grid-template-columns:  1fr;                    
+                             
+    }
+}
+@media screen and (max-width:200px){
+    h1{
+       font-size: 25px; 
+       margin: 0;
+    }
 
+    
 
+    
+}
 
