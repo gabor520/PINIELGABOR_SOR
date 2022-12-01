@@ -1,0 +1,16 @@
+main{
+    background-color: #333333;
+    width: 80%;
+    min-width:1000px;
+    margin: auto;
+}
+header{
+    height: 300px;
+    font-family: Garamond;
+    font-weight:bold;
+    background-size:cover;
+}
+
+
+
+
