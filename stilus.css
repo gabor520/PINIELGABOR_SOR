@@ -105,10 +105,11 @@ table tr:nth-child(even){
                              
     }
 }
-@media screen and (max-width:200px){
+@media screen and (max-width:1000px){
     h1{
        font-size: 25px; 
        margin: 0;
+      min-width: 500px;
     }
 
     
